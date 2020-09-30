@@ -1,0 +1,550 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-selection { 
+    background: rgba(254, 205, 56,.6);
+    color: #000; 
+}
+::-ms-selection { 
+    background: rgba(254, 205, 56,.6);
+    color: #000; 
+}
+::-moz-selection { 
+    background: rgba(254, 205, 56,.6);
+    color: #000; 
+}
+::selection { 
+    background: rgba(254, 205, 56,.6);
+    color: #000; 
+}
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: rgb(33, 33, 33);
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 2560px;
+}
+
+ol,ul,li {
+    list-style-type: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p,
+ol,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.35;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+.container {
+    max-width: 1750px;
+}
+/* ========== Comman CSS ========== */
+.heading h2 {
+    font-weight: 400;
+}
+.font-weight-semibold {
+    font-weight: 500!important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.mx-100 {
+    max-width: 100px;
+}
+.mx-150 {
+    max-width: 150px;
+}
+.mx-220 {
+    max-width: 220px;
+}
+.mx-250 {
+    max-width: 250px;
+}
+.mx-300 {
+    max-width: 300px;
+}
+.mx-400 {
+    max-width: 400px;
+}
+.mx-500 {
+    max-width: 500px;
+}
+.mx-600 {
+    max-width: 600px;
+}
+.mx-700 {
+    max-width: 700px;
+}
+.mx-800 {
+    max-width: 800px;
+}
+.mx-1000 {
+    max-width: 1000px;
+}
+.container-md {
+    max-width: 1200px;
+}
+.container-lg {
+    max-width: 1400px;
+}
+.bg-no-repeat {
+    background-repeat: no-repeat!important;
+}
+.border-darkYellow {
+    border-color:#f3b835!important;
+}
+.z-index-9 {
+    position: relative;
+    z-index: 9;
+}
+label {
+    color: #727272;
+    font-weight: 500;
+    font-size: 14px;
+}
+.grey-gradient {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.yellow-gradient-border:before {
+    content: '';
+    left: 15px;
+    right: 15px;
+    top: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-linear-gradient(to right, #ffffff, #e4ad31, #ffffff);
+    background: linear-gradient(to right, #ffffff, #e4ad31, #ffffff);
+}
+.black-gradient {
+    background: -webkit-linear-gradient(to top, rgb(255 255 255), rgb(0 0 0));
+    background: linear-gradient(to top, rgb(255 255 255), rgb(0 0 0));
+}
+
+/* ========== End Comman CSS ========== */
+
+/* ========== Background Color CSS ========== */
+.bg-black {
+    background-color: #000000!important;
+}
+.bg-sm-grey {
+    background-color: #f8f8f8!important;
+}
+.bg-yellow {
+    background-color: #fecd38!important;
+}
+.bg-lightGrey {
+    background-color:#ebebeb!important;
+}
+/* ========== End Background Color CSS ========== */
+
+/* ========== Color CSS ========== */
+.text-black {
+    color: #000!important;
+}
+.text-yellow {
+    color: #fecd38!important;
+}
+.text-darkYellow {
+    color: #e4b214!important;
+}
+.contact-us-wrapper .contact-number *,
+.text-darkGrey {
+    color: #9e9e9e!important;
+}
+.text-fadeBlack {
+    color: #575757!important
+}
+footer .contact-number * {
+    color: #ffffff!important;
+}
+.text-fadeGrey {
+    color: #b2b2b2!important;
+}
+/* ========== End Color CSS ========== */
+
+/* ========== Comman Button CSS ========== */
+.btn {
+    border:0;
+    padding: .315rem 1.25rem;
+    outline: 0!important;
+    font-weight: 500;
+    font-size: .85rem;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 1.15rem;
+}
+button,
+.form-control,
+.form-control:focus {
+    outline: 0!important;
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: #000;
+}
+.global-radius {
+    -webkit-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px
+}
+.radius-12 {
+    -webkit-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+/* Yellow Button */
+.btn-yellow {
+    background-color: #fecd38;
+    color: #000000;
+}
+.btn-yellow.btn-hvr-shutter {
+    background-color: #fecd38;
+}
+.btn-yellow.btn-hvr-shutter:before {
+    background-color: #000000;
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus {
+    color: #484848;
+    background: #fbc31b;
+}
+/* End Yellow Button */
+
+/* black Button */
+.btn-black {
+    background-color: #000000;
+    color: #ffffff!important;
+}
+.btn-black.btn-hvr-shutter {
+    background-color: #000000;
+}
+.btn-black.btn-hvr-shutter:before {
+    background-color: #fecd38;
+}
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    color: #000000!important;
+}
+/* End black Button */
+/* ========== End Comman Button CSS ========== */
+
+/* ========== Form Realted Comman CSS ========== */
+.resize-none {
+    resize: none;
+}
+
+/* Custom Checkbox */
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.custom-checkbox .checkmark .check:before {
+    content: '';
+    height: 22px;
+    width: 22px;
+    border: 1px solid #8b837f;
+    display: inline-block;
+    -webkit-border-radius:3px;
+    -ms-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.custom-checkbox.white .checkmark .check:before {
+    border: 1px solid #fff;
+}
+.custom-checkbox.white .checkmark {
+    color:#fff;
+}
+.checkmark {
+    cursor: pointer;
+}
+.checkmark > span {
+    display: inline-block;
+    line-height: 16px;
+}
+.custom-checkbox input:checked ~ .checkmark .check:after {
+    content: '';
+    height: 8px;
+    width: 15px;
+    display: inline-block;
+    border: 2px solid #000000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    border-width: 0px 0px 3px 3px;
+}
+.custom-checkbox .check {
+    position: relative;
+    height: 22px;
+}
+.custom-checkbox input:checked ~ .checkmark .check:before {
+    background: #fcd048;
+    border-color: #fcd048;
+}
+/* End Custom Checkbox */
+
+/* ========== End Form Realted Comman CSS ========== */
+
+/* ========== CSS for JC Header ========== */
+.jc-header .navbar-brand {
+    max-width: 80px;
+}
+.jc-header .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+/* ========== End CSS for JC Header ========== */
+.black-overlay:before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,.25);
+}
+
+.jc-banner-bg {
+    background-image: url(/assets/images/jc-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 80%;
+    background-size: cover;
+}
+.jc-banner-content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.jc-banner-content {
+    max-width: 500px;
+}
+.jc-form-section {
+    padding-bottom: 80px;
+}
+.jc-sections-header {
+    padding: 80px 0;
+}
+.jc-form-container {
+    padding: 60px;
+}
+.js-step-list {
+    padding: 60px 30px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+.jc-banner-content h1 {
+    font-size: 34px;
+    line-height: 36px;
+}
+.jc-banner-content p {
+    font-size: 14px;
+}
+.js-step-list li:not(:first-child) {
+    padding-top: 30px;
+}
+.js-step-list li:not(:first-child):before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    background: #ebebeb;
+    left: 18px;
+    top:0;
+    z-index: 9;
+    height: 31px;
+}
+.js-step-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #999999;
+}
+.js-step-list li.active:not(:first-child):before,
+.active .js-step-count {
+    background-color: #fecd38;
+    color: #484848;
+}
+.active .js-step-name {
+    color: #fecd38;
+}
+.jc-form-container label {
+    text-transform: uppercase;
+    font-size: 12px;
+    /* margin-bottom: 0; */
+    font-weight: 600;
+    color: #484848;
+}
+.jc-form-container .form-control {
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 14px;
+    border:1px solid #ebebeb;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.font-12 {
+    font-size: 12px;
+}
+div#particles-js {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.jc-form-section .container {
+    z-index: 99;
+    position: relative;
+}
+.dotted-bg {
+    background-image: url(/assets/images/yellow-dot.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    opacity: .1;
+}
+/* .circleGradient[data-circle="circleI"] {
+    transform: rotate(28deg);
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+}
+@media (min-width: 576px) {
+    .circleGradient[data-circle="circleI"] {
+        transform: rotate(21deg);
+        top: 0px;
+        left: 0px;
+    }
+}
+.circleGradient {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 10%, rgba(255, 255, 255, 0) 55%);
+    z-index: -1;
+}
+@media (min-width: 992px) {
+    .circleGradient {
+        width: 320px;
+        height: 320px;
+    }
+}
+@media (min-width: 1230px) {
+    .circleGradient {
+        width: 403px;
+        height: 403px;
+    }
+} */
+/* @media (min-width: 768px) {
+    .circleGradient[data-circle="circleI"] {
+        top: 0px;
+    }
+}
+@media (min-width: 1230px) {
+    .circleGradient[data-circle="circleI"] {
+        left: 0px;
+    }
+} */
+
+/* ========== CSS for JC Footer ========== */
+.jc-footer-logo {
+    max-width: 80px;
+}
+.jc-footer-info p {
+    font-size: 12px;
+}
+.jc-copyright-text:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    max-width: 100px;
+    margin: 0 auto;
+}
+.js-step-count {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background: #ebebeb;
+    color: #999;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* ========== End CSS for JC Footer ========== */
+
+/* ========== CSS for Back To Top Button ========== */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 36px;
+    width: 36px;
+    font-size: 22px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.back-to-top.shown {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    pointer-events: all;
+}
+/* ========== End CSS for Back To Top Button ========== */
