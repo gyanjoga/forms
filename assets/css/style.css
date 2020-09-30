@@ -337,7 +337,7 @@ button,
 }
 
 .jc-banner-bg {
-    background-image: url(assets/images/jc-banner.jpg);
+    background-image: url(/assets/images/jc-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 80%;
@@ -431,7 +431,7 @@ div#particles-js {
     position: relative;
 }
 .dotted-bg {
-    background-image: url(assets/images/yellow-dot.png);
+    background-image: url(/assets/images/yellow-dot.png);
     position: absolute;
     left: 0;
     right: 0;
