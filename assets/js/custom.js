@@ -1,5 +1,11 @@
 
 $(document).ready(function(){
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1200);
+    });
     // AOS animation 
     AOS.init({
         easing: 'ease-out-back',
@@ -157,14 +163,3 @@ update = function () {
 };
 requestAnimationFrame(update);
 
-// Smooth scrolling when the document is loaded and ready
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1200);
-});
-
-
-
-    
