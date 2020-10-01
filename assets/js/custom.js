@@ -146,7 +146,7 @@ stats.domElement.style.position = "absolute";
 stats.domElement.style.left = "0px";
 stats.domElement.style.top = "0px";
 document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
+count_particles = document.querySelector(".jc-count-particles");
 update = function () {
   stats.begin();
   stats.end();
@@ -156,6 +156,14 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+// Smooth scrolling when the document is loaded and ready
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1200);
+});
 
 
 

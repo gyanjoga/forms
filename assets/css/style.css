@@ -260,6 +260,40 @@ button,
     resize: none;
 }
 
+.jc-cutom-radio input[type="radio"] {
+    display: none;
+}
+.jc-cutom-radio input[type="radio"] + label {
+    text-transform: none;
+    position: relative;
+    padding-left: 33px;
+    cursor: pointer;
+    min-height: 20px;
+    line-height: 20px;
+}
+.jc-cutom-radio input[type="radio"]:checked+label span {
+    background-color: #fccb37;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 0 1px #434343;
+}
+.jc-cutom-radio input[type="radio"]+label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 12px 0 2px;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.jc-cutom-radio input[type="radio"]+label span {
+    border:1px solid #434343;
+}
+
+
 /* Custom Checkbox */
 .custom-checkbox input[type="checkbox"] {
     opacity: 0;
@@ -337,7 +371,6 @@ button,
 }
 
 .jc-banner-bg {
-    /* background-image: url(/assets/images/jc-banner.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 80%;
@@ -363,7 +396,7 @@ button,
 .jc-form-container {
     padding: 60px;
 }
-.js-step-list {
+.jc-step-list {
     padding: 60px 30px;
     max-width: 360px;
     margin: 0 auto;
@@ -375,10 +408,10 @@ button,
 .jc-banner-content p {
     font-size: 14px;
 }
-.js-step-list li:not(:first-child) {
+.jc-step-list li:not(:first-child) {
     padding-top: 30px;
 }
-.js-step-list li:not(:first-child):before {
+.jc-step-list li:not(:first-child):before {
     position: absolute;
     content: '';
     width: 2px;
@@ -388,23 +421,48 @@ button,
     z-index: 9;
     height: 31px;
 }
-.js-step-name {
+.jc-step-count {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background: #ebebeb;
+    color: #999;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.jc-step-name {
     font-size: 13px;
     font-weight: 600;
     color: #999999;
+    text-transform: uppercase;
 }
-.js-step-list li.active:not(:first-child):before,
-.active .js-step-count {
+.jc-step-list li.active:not(:first-child):before,
+.active .jc-step-count {
     background-color: #fecd38;
     color: #484848;
 }
-.active .js-step-name {
+.active .jc-step-name {
     color: #fecd38;
 }
 .jc-form-container label {
     text-transform: uppercase;
     font-size: 12px;
-    /* margin-bottom: 0; */
     font-weight: 600;
     color: #484848;
 }
@@ -431,7 +489,6 @@ div#particles-js {
     position: relative;
 }
 .dotted-bg {
-    /* background-image: url(/assets/images/yellow-dot.png); */
     position: absolute;
     left: 0;
     right: 0;
@@ -439,47 +496,15 @@ div#particles-js {
     bottom: 0;
     opacity: .1;
 }
-/* .circleGradient[data-circle="circleI"] {
-    transform: rotate(28deg);
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+.jc-custom-upload {
+    display: block;
+    max-width: 128px;
+    margin: 0 auto;
+    cursor: pointer;
 }
-@media (min-width: 576px) {
-    .circleGradient[data-circle="circleI"] {
-        transform: rotate(21deg);
-        top: 0px;
-        left: 0px;
-    }
+.jc-picture-container {
+    max-width: 100px;
 }
-.circleGradient {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 10%, rgba(255, 255, 255, 0) 55%);
-    z-index: -1;
-}
-@media (min-width: 992px) {
-    .circleGradient {
-        width: 320px;
-        height: 320px;
-    }
-}
-@media (min-width: 1230px) {
-    .circleGradient {
-        width: 403px;
-        height: 403px;
-    }
-} */
-/* @media (min-width: 768px) {
-    .circleGradient[data-circle="circleI"] {
-        top: 0px;
-    }
-}
-@media (min-width: 1230px) {
-    .circleGradient[data-circle="circleI"] {
-        left: 0px;
-    }
-} */
 
 /* ========== CSS for JC Footer ========== */
 .jc-footer-logo {
@@ -500,32 +525,6 @@ div#particles-js {
     max-width: 100px;
     margin: 0 auto;
 }
-.js-step-count {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -o-align-items: center;
-    -ms-align-items: center;
-    justify-content: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -o-justify-content: center;
-    -ms-justify-content: center;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    background: #ebebeb;
-    color: #999;
-    margin-right: 15px;
-    font-weight: bold;
-}
-
 /* ========== End CSS for JC Footer ========== */
 
 /* ========== CSS for Back To Top Button ========== */
